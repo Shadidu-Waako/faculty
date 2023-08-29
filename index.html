@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="input.css">
+  <title>faculty of Faizal</title>
+</head>
+<body>
+  <!-- header -->
+  <div class="border-0 py-0">
+  <div class="relative">
+    <div class="flex sm:flex-col sm:h-20 md:flex-row bg-green w-screen md:h-12">
+      <!-- icons -->
+      <div class="">
+        <ul class="space-x-5 ml-40 pt-2 object-center">  
+          <i><a href="https://www.facebook.com/iuiu.ac.ug/"><img class="bg-white border border-black rounded-full w-8 h-8 "
+              src="images/facebook.png" alt=""></a>
+          </i>         
+          <i><a href="https://twitter.com/iuiuac"><img class="bg-white border border-black rounded-full w-8 h-8" src="images/twitter.png" alt=""></a>
+          </i>          
+          <i><a href="https://www.linkedin.com/school/islamic-university-in-uganda/"><img
+              class="bg-white border border-black rounded-full w-8 h-8" src="images/linkedin.png" alt=""></a>
+          </i>         
+          <i><a href="https://www.youtube.com/channel/UCWM6kgDE8JXcGICBIR4tH5Q"><img
+              class="bg-white border border-black rounded-full w-8 h-8" src="images/youtube.png" alt=""></a>
+          </i>
+        </ul>
+      </div>
+      <!-- links -->
+      <div class="md:ml-96 space-x-5 pt-2 text-center text-white">
+        <a href="https://iuiufm.iuiu.ac.ug/" class="hover:text-teal">IUIU FM</a>
+        <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&hd=iuiu.ac.ug&osid=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S822379571%3A1691664443722201" class="hover:text-teal">IUIU Webmail</a>
+        <a href="https://www.iuiu.ac.ug/backoffice/" class="hover:text-teal">Staff Area</a>
+        <a href="https://www.iuiu.ac.ug/alumni.php" class="hover:text-teal">Alumni</a>
+        <a href="https://www.iuiu.ac.ug/contact.php" class="hover:text-teal">Contact Us</a>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  
+  <!-- logo for mobile -->
+  <div class="bg-ground">
+    <img class="p-3 m-0 h-20" src="img/logo.png" alt="">
+  </div>
+
+
+  <div>
+    <!-- hamburger icon -->
+    <div>
+      <button id="menu-btn" class="hamburger md:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-bottom"></span>
+        <span class="hamburger-middle"></span>
+      </button>
+    </div>
+    <!-- moblie menu items -->
+    <div class="md:hidden">
+      <div id="menu"
+        class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:self-center left-6 right-6 drop-shadow-md">
+        <a href="index.html" class="text-bold font-bold hover:text-green hover:italic hover:underline">HOME</a>
+        <a href="about.html" class="text-bold font-bold hover:text-green hover:italic hover:underline">ABOUT THE FACULTY</a>
+        <a href="remarks.html" class="text-bold font-bold hover:text-green hover:italic hover:underline">REMAKS FROM THE
+          DEAN</a>
+        <a href="programs.html" class="text-bold font-bold hover:text-green hover:italic hover:underline">PROGRAMS</a>
+        <a href="departments.html" class="text-bold font-bold hover:text-green hover:italic hover:underline">DEPARTMENTS</a>
+        <a href="staff.html" class="text-bold font-bold hover:text-green hover:italic hover:underline">STAFF</a>
+        <a href="staffprofile.html" class="text-bold font-bold hover:text-green hover:italic hover:underline">STAFF PROFILE</a>
+        <a href="alumni.html" class="text-bold font-bold hover:text-green hover:italic hover:underline">ALUMNI & CURRENT
+          STUDENTS ENROLLMENT</a>
+        <a href="projects.html" class="text-bold font-bold hover:text-green hover:italic hover:underline">PROJECTS AND
+          RESEARCH</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- links for the web pages -->
+  <div class="hidden md:flex pl-20 space-x-5 h-20 pt-2">
+    <a href="index.html" class="text-bold font-bold hover:text-green hover:italic hover:underline">HOME</a>
+    <a href="about.html" class="text-bold font-bold hover:text-green hover:italic hover:underline">ABOUT THE FACULTY</a>
+    <a href="remarks.html" class="text-bold font-bold hover:text-green hover:italic hover:underline">REMAKS FROM THE DEAN</a>
+    <a href="programs.html" class="text-bold font-bold hover:text-green hover:italic hover:underline">PROGRAMS</a>
+    <a href="departments.html" class="text-bold font-bold hover:text-green hover:italic hover:underline">DEPARTMENTS</a>
+    <a href="staff.html" class="text-bold font-bold hover:text-green hover:italic hover:underline">STAFF</a>
+    <a href="staffprofile.html" class="text-bold font-bold hover:text-green hover:italic hover:underline">STAFF PROFILE</a>
+    <a href="alumni.html" class="text-bold font-bold hover:text-green hover:italic hover:underline">ALUMNI & CURRENT STUDENTS ENROLLMENT</a>
+    <a href="projects.html" class="text-bold font-bold hover:text-green hover:italic hover:underline">PROJECTS AND RESEARCH</a>
+  </div>
+
+  <!-- welcome section -->
+  <section id="hero">
+    <!-- flex container -->
+    <div class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row">
+      <!-- left item -->
+      <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+        <h1 class="max-w-md text-4xl text-darkGreen font-bold text-center md:text-5xl md:text-left">
+          Welcome to the Faculty of Islamic Studies and Arabic Language
+        </h1>
+        <p class="max-w-sm text-center text-teal md:text-left">
+          Secure yourself the best certified degree in the listed courses under the faculty of FAIZO here at ISLAMIC
+          UNIVERSITY IN UGANDA
+        </p>
+        <div class="flex justify-center md:justify-start">
+          <a href="https://www.iuiu.ac.ug/apply-online.php" class="p-3 px-6 pt-2 text-white bg-green rounded-full baseline hover:bg-teal">
+            ApplyNow
+          </a>
+        </div>
+      </div>
+      <!-- image -->
+      <div class="md:w-1/2">
+        <img src="images/1 (1).jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- pictures -->
+  <section class="article">
+    <div class="wrapper">
+      <ul class="marquee">
+        <li class="w-screen"><img src="images/august-intake-2023.jpg" alt=""></li>
+        <li class="w-screen"><img src="images/august-intake-2023.jpg" alt=""></li>
+        <li class="w-screen"><img src="images/iuiu.jpg" alt=""></li>
+        <li class="w-screen"><img src="images/meeting.jpg" alt=""></li>
+        <li class="w-screen"><img src="images/online-application.jpg" alt=""></li>
+      </ul>
+      <ul class="marquee2">
+        <li class="w-screen"><img src="images/august-intake-2023.jpg" alt=""></li>
+        <li class="w-screen"><img src="images/august-intake-2023.jpg" alt=""></li>
+        <li class="w-screen"><img src="images/iuiu.jpg" alt=""></li>
+        <li class="w-screen"><img src="images/meeting.jpg" alt=""></li>
+        <li class="w-screen"><img src="images/online-application.jpg" alt=""></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- grids -->
+  <div class="p-0 m-0">
+  <div class="sm:flex sm:flex-col md:flex-row gap-0 text-white text-bold">
+    <!-- grid elements -->
+    <!-- Graduation grid -->
+    <div class="bg-dark grid grid-rows-4">
+      <!-- icon -->
+      <div class="w-14 mx-auto h-1/6 my-5">
+        <img src="icon/graduation.svg" alt="">
+      </div>
+      <!-- title -->
+      <div class="h-1/6">
+        <h1 class="flex justify-center font-bold">
+          Graduation
+        </h1>
+      </div>
+      <!-- paragraph -->
+      <div class="flex h-1/2 justify-center">
+        <p class="h-1/2">
+          Graduation is a calendar highlight where students receive their degrees. Merit students and people who contribute to
+          society are recognised with awards
+        </p>
+      </div >
+      <!-- button -->
+      <div class="text-bold mx-auto h-1/6">
+        <a href="https://www.iuiu.ac.ug/apply-online.php" class="inline-block"><button class="text-white bg-green p-3 hover:text-green hover:bg-white">
+          Get Started
+        </button></a>
+      </div>
+      
+    </div>
+
+    <!-- Adimissions grid -->
+    <div class="bg-green grid grid-rows-4">
+           <!-- icon -->
+      <div class="w-14 mx-auto h-1/6 my-5">
+        <img src="icon/admission.png" alt="">
+      </div>
+      <!-- title -->
+      <div class="h-1/6">
+        <h1 class="flex justify-center font-bold">
+          Admissions
+        </h1>
+      </div>
+      <!-- paragraph -->
+      <div class="flex h-1/2 justify-center">
+        <p class="h-1/2">
+          Welcome to our esteemed Faculty of Arabic and Islamic Studies. Join us in exploring language, culture, and intellectual
+          heritage, fostering compassionate leaders and global understanding.
+        </p>
+      </div>
+      <!-- button -->
+      <div class="text-bold mx-auto h-1/6">
+        <a href="https://www.iuiu.ac.ug/apply-online.php" class="inline-block"><button
+            class="text-white bg-red p-3 hover:text-green hover:bg-white">
+            Apply Now
+          </button></a>
+      </div>
+    </div>
+
+    <!-- mission grid -->
+<div class="bg-red grid grid-rows-4">
+           <!-- icon -->
+      <div class="w-14 mx-auto h-1/6 my-5">
+        <img src="icon/mission.png" alt="">
+      </div>
+      <!-- title -->
+      <div class="h-1/6">
+        <h1 class="flex justify-center font-bold">
+          Mission
+        </h1>
+      </div>
+      <!-- paragraph -->
+      <div class="flex h-1/2 justify-center">
+        <p class="h-1/2">
+          To provide a comprehensive and innovative education in Arabic language and Islamic studies, empowering students and making positive contributions to society.
+        </p>
+      </div>
+      <!-- button -->
+      <div class="text-bold mx-auto h-1/6">
+        <button class="text-white bg-green p-3 hover:text-green hover:bg-white">
+          Read More
+        </button>
+      </div>     
+    </div>
+
+    <!-- vission grid -->
+ <div class="bg-dark grid grid-rows-4">
+           <!-- icon -->
+      <div class="w-14 mx-auto h-1/6 my-5">
+        <img src="icon/vision.png" alt="">
+      </div>
+      <!-- title -->
+      <div class="h-1/6">
+        <h1 class="flex justify-center font-bold">
+          Vision
+        </h1>
+      </div>
+      <!-- paragraph -->
+      <div class="flex h-1/2 justify-center">
+        <p class="h-1/2">
+          To be a global leader in promoting the understanding and appreciation of Arabic language, Islamic culture, and heritage, and fostering cross-cultural harmony.
+        </p>
+      </div>
+      <!-- button -->
+      <div class="text-bold mx-auto h-1/6">
+        <button class="text-white bg-green p-3 hover:text-green hover:bg-white">
+          Read More
+        </button>
+      </div>   
+      </div>
+    </div>
+
+  <!-- faculty -->
+  <div class="sm:flex sm:flex-col sm:m-0 sm:p-0 bg-ground md:grid grid-cols-2 md:m-20 md:space-x-10 md:p-10">
+    <div class="sm:p-5 sm:mt-10">
+      <img src="images/faculty.jpg" alt="">
+    </div>
+    <div class="flex flex-col">
+      <h2 class="pb-5 text-green font-bold">
+        You Are Welcome To
+      </h2>
+      <h1 class="text-black font-bold text-capitalize text-4xl">
+        Faculty Of Faizal
+      </h1>
+      <p class="text-darkGray py-5">
+        I extend a warm and heartfelt welcome to the Faculty of Arabic and Islamic Studies. This esteemed institution stands as
+        a gateway to the profound world of the Arabic language, Islamic culture, and the enduring intellectual contributions of
+        Islamic civilization.        
+        We are dedicated to fostering an inclusive and enriching learning environment, where diversity is celebrated, and minds
+        are open to new perspectives. Through our rigorous academic programs, interdisciplinary approach, and commitment to
+        research and innovation, we aim to equip you with the knowledge and skills to become ethical leaders and ambassadors of
+        cultural understanding.       
+        As we embark on this journey together, let us embrace the beauty of language, the richness of history, and the wisdom of
+        Islamic teachings. I encourage each one of you to actively engage, explore, and contribute to the collective pursuit of
+        knowledge and enlightenment. Thank you for choosing our faculty; we are excited to witness your growth and success.
+      </p>
+    </div>
+  </div>
+
+<!-- footer -->
+<section>
+  <footer class="bg-dark">
+    <!-- flex container -->
+    <div class="container flex flex-col-reverse justify-between px-6 py-8 mx-auto space-y-8 md:flex-row md:space-y-0">
+      <!-- logo and social links container -->
+      <div
+        class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+        <div class="mx-auto my-6 text-center text-white md:hidden">
+          Copyright &copy; 2023 All Rights Reserved
+        </div>
+        <!-- logo -->
+        <div>
+          <img src="img/iuiu-log.jpg" class="h-8" alt="">
+        </div>
+        <!-- social links -->
+        <div class="flex justify-center space-x-4">
+          <!-- link 1 -->
+          <a href="https://www.facebook.com/iuiu.ac.ug/">
+            <img src="images/facebook.png" class="h-8" alt="">
+          </a>
+          <!-- link 2 -->
+          <a href="https://twitter.com/iuiuac">
+            <img src="images/twitter.png" class="h-8" alt="">
+          </a>
+          <!-- link 3 -->
+          <a href="https://www.linkedin.com/school/islamic-university-in-uganda/">
+            <img src="images/linkedin.png" class="h-8" alt="">
+          </a>
+          <!-- link 4 -->
+          <a href="https://www.youtube.com/channel/UCWM6kgDE8JXcGICBIR4tH5Q">
+            <img src="images/youtube.png" class="h-8" alt="">
+          </a>
+        </div>
+      </div>
+      <!-- list container -->
+      <div class="flex justify-around space-x-32">
+        <div class="flex flex-col space-y-2 text-white">
+          <a href="index.html" class="hover:text-green">Home</a>
+          <a href="about.html" class="hover:text-green">About Us</a>
+          <a href="programs.html" class="hover:text-green">Programs</a>
+          <a href="remarks.html" class="hover:text-green">Remarks</a>
+          <a href="departments.html" class="hover:text-green">Departments</a>
+        </div>
+        <div class="flex flex-col space-y-3 text-white">
+          <a href="staff.html" class="hover:text-green">Staff</a>
+          <a href="staffprofile.html" class="hover:text-green">Staff Profile</a>
+          <a href="alumni.html" class="hover:text-green">Alumni</a>
+          <a href="projects.html" class="hover:text-green">Projects</a>
+        </div>
+        <div class="hidden text-white md:block">
+          Copyright &copy; 2023, All Rights Reserved
+        </div>
+      </div>
+
+        <!-- input container -->
+        <div class="flex flex-col justify-between">
+            <div class="flex space-x-3 h-14">
+              <a href="mailto:registrar@iuiu.ac.ug" class="hover:text-blue text-white font-bold py-2 px-4 rounded underline">
+                Contact Us
+              </a>
+        </div>
+        </div>
+
+    </div>
+  </footer>
+</section>
+<script src="js/script.js"></script>
+</body>
+</html>

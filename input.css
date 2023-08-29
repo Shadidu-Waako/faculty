@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: '#343a40';
+}
+.article {
+  overflow: hidden;
+  white-space: nowrap;
+  width: screen;
+  display: flex;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.marquee {
+  animation: marquee 20s linear infinite;
+}
+
+.marquee2 {
+  animation: marquee2 20s linear infinite;
+  position: absolute;
+  top: 0;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.h11{
+  text-align: center;
+  font-weight: 800;
+  color: white;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+.para {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: medium;
+  color: white;
+  padding: 10px;
+}
+
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+table {
+  border: 2px solid;
+  padding: 5px;
+  text-transform: capitalize;
+  margin-left: 30px;
+
+}
+
+th,
+td {
+  padding: 5px;
+  font-size: 20px;
+
+}
+
+th {
+  text-transform: uppercase;
+  color: rgb(2, 53, 5);
+  font-size: 30px;
+
+}
+
+.head {
+  text-transform: uppercase;
+  color: rgb(2, 53, 5);
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  background: rgb(189, 189, 189);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.alumni {
+  text-transform: capitalize;
+  font-size: 20px;
+  text-align: center;
+}
+
+.pp {
+  text-align: left;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative; 
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
